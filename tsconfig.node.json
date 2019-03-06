@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "target": "es6",
+    "lib": ["dom", "es7"],
+    "module": "esnext",
+    "declaration": true,
+    "declarationDir": "./lib"
+  },
+  "exclude": ["node_modules", "bower_components", "lib", "coverage"]
+}

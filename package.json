@@ -38,6 +38,7 @@
     "flow": "flow",
     "flow:check": "flow check",
     "build": "rollup -c",
+    "build-node": "rollup -c rollup.node.config.js",
     "prepublishOnly": "npm run build",
     "pretest": "npm run build",
     "test": "jest",
