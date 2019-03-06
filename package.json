@@ -1,0 +1,93 @@
+{
+  "name": "ts-lib-starter",
+  "version": "0.1.0",
+  "description": "TypeScript Library Starter - A boilerplate for creating a JavaScript library, using TypeScript and Rollup.",
+  "main": "lib/index.js",
+  "module": "lib/m.js",
+  "umd:main": "lib/umd.js",
+  "typings": "lib/index.d.ts",
+  "author": "senntyou <jiangjinbelief@163.com>",
+  "homepage": "https://github.com/senntyou/ts-lib-starter",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senntyou/ts-lib-starter"
+  },
+  "keywords": [
+    "library",
+    "typescript",
+    "rollup",
+    "starter",
+    "boilerplate"
+  ],
+  "bugs": {
+    "url": "https://github.com/senntyou/ts-lib-starter/issues"
+  },
+  "readmeFilename": "README.md",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "precommit": "npm run lint-staged",
+    "lint-staged": "lint-staged",
+    "prettier": "prettier --write \"./**/*.{js,ts,md,json}\"",
+    "eslint": "eslint \"./**/*.js\"",
+    "eslint:fix": "eslint \"./**/*.js\" --fix",
+    "tslint": "tslint --project .",
+    "tslint:fix": "tslint --project . --fix",
+    "flow": "flow",
+    "flow:check": "flow check",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "pretest": "npm run build",
+    "test": "jest",
+    "test-watch": "jest --watch --notify",
+    "test-cover": "jest --coverage",
+    "coverage": "npm run test-cover && opn coverage/lcov-report/index.html"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.4.0",
+    "eslint-plugin-flowtype": "^3.2.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.3",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "flow-bin": "^0.94.0",
+    "husky": "^1.3.1",
+    "jest": "^23.6.0",
+    "lint-staged": "^8.1.0",
+    "opn-cli": "^4.0.0",
+    "prettier": "^1.15.3",
+    "rollup": "^1.4.0",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-typescript2": "^0.19.3",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.3.3333"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "**/*.ts": [
+      "tslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "**/*.{md,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
