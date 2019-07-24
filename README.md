@@ -1,30 +1,32 @@
 # ts-lib-starter
 
-TypeScript Library Starter - A boilerplate for creating a JavaScript library, using TypeScript and Rollup.
+[English Documentation](./README.en.md)
 
-## Getting started
+一个用于快速创建 JavaScript 组件库的模板脚手架，使用 TypeScript 与 Rollup 构建.
+
+## 快速开始
 
 ```
 git clone https://github.com/senntyou/ts-lib-starter.git --depth=1
 
 cd ts-lib-starter
 
-npm install             # install dependencies
+npm install             # 安装依赖
 
-npm run build           # build distribution files
+npm run build           # 构建发布文件
 ```
 
-## Features
+## 特性
 
-- [TypeScript](http://www.typescriptlang.org/) language, [jest](https://jestjs.io/en/) test support.
+- [TypeScript](http://www.typescriptlang.org/) 语法, [jest](https://jestjs.io/en/) 测试支持.
 
-## To build a library only for Node.js
+## 构建只在 Node.js 中使用的库
 
-If you want to build a library only for Node.js, you can make it as follows:
+如果构建只在 Node.js 中使用的库，可以如下做：
 
-- Remove existed `rollup.config.js` file, and rename `rollup.node.config.js` to `rollup.config.js`.
-- Remove `module, umd:main` fields of `package.json`.
+- 删除已有的 `rollup.config.js` 文件, 然后重命名 `rollup.node.config.js` 为 `rollup.config.js`.
+- 删除 `package.json` 的 `module, umd:main` 字段.
 
-## Notes
+## 注意
 
-- This repo is only for pure JavaScript library.
+- 这个项目只用于构建纯 JavaScript 库.
