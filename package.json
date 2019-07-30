@@ -1,7 +1,7 @@
 {
   "name": "ts-lib-starter",
   "version": "0.1.0",
-  "description": "TypeScript Library Starter - A boilerplate for creating a JavaScript library, using TypeScript and Rollup.",
+  "description": "A boilerplate for creating a JavaScript library, using TypeScript and Rollup.",
   "main": "lib/index.js",
   "module": "lib/m.js",
   "umd:main": "lib/umd.js",
